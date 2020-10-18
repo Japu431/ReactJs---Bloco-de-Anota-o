@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import CardNota from "../../ceep/src/components/Card_Nota";
+import CardNota from "../Card_Nota";
+import "./estilo.css";
+
 
 class ListaDeNotas extends Component {
   render() {
