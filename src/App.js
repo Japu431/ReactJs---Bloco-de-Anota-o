@@ -1,20 +1,16 @@
-import React, { Component } from "react";
-import CardNota from "../../ceep/src/components/Card_Nota";
+import React , { Component } from "react";
+import ListaDeNotas from "./components/ListaDeNotas/ListaDeNotas";
+import FormularioCadastro from "./components/Formulario/FormularioCadastro";
 
-class ListaDeNotas extends Component {
+class App extends Component {
   render() {
     return (
-      <ul className="lista-notas">
-        {Array.of("Trabalho", "Trabalho", "Estudos").map((categoria, index) => {
-          return (
-            <li className="lista-notas_item" key={index}>
-              <CardNota />
-            </li>
-          );
-        })}
-      </ul>
+      <section>
+        <FormularioCadastro />
+        <ListaDeNotas />
+      </section>
     );
   }
 }
 
-export default ListaDeNotas;
+export default App;
